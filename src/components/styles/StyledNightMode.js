@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledNightmode = styled.div`
+const StyledNightMode = styled.div`
   font-family: "Hind", sans-serif;
   font-weight: 800;
   font-size: 1.6em;
@@ -73,4 +73,4 @@ const StyledNightmode = styled.div`
   }
 `;
 
-export default StyledNightmode;
+export default StyledNightMode;

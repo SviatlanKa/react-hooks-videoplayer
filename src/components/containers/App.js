@@ -13,6 +13,6 @@ const App = () => (
             <GlobalStyle/>
         </>
     </BrowserRouter>
-)
+);
 
 export default App;

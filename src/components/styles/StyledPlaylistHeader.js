@@ -9,10 +9,7 @@ const StyledPlaylistHeader = styled.div`
   padding: 0 20px;
   margin: 0 0 20px 0;
   min-height: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: space-between;
 `;
