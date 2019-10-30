@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const StyledWbnPlayer = styled.div`
-    background: ${props => props.theme.bgColor};
+    background: ${props => props.theme.bgcolor};
     border: ${props => props.theme.border};
     max-width: 1800px;
     margin: 0 auto;

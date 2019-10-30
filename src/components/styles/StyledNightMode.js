@@ -33,7 +33,6 @@ const StyledNightMode = styled.div`
     right: 0;
     bottom: 0;
     background-color: #ccc;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
   }
 
@@ -45,7 +44,6 @@ const StyledNightMode = styled.div`
     left: 4px;
     bottom: 4px;
     background-color: white;
-    -webkit-transition: 0.4s;
     transition: 0.4s;
   }
 
@@ -58,8 +56,6 @@ const StyledNightMode = styled.div`
   }
 
   input:checked + .slider:before {
-    -webkit-transform: translateX(16px);
-    -ms-transform: translateX(16px);
     transform: translateX(16px);
   }
 
