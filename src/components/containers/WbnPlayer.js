@@ -27,16 +27,20 @@ const themeLight = {
 const WbnPlayer = ({ match, history, location }) => {
 
     const videos = JSON.parse(document.querySelector('[name="videos"]').value);
-    console.log(videos);
-    console.log(match, history, location);
+    const savedState = JSON.parse(localStorage.getItem(`${videos.playlistId}`));
 
     const [state, setState] = useState({
-        videos: videos.playlist,
-        activeVideo: videos.playlist[0],
-        nightMode: true,
-        playlistId: videos.playlistId,
-        autoplay: false,
+        videos: savedState ? savedState.videos : videos.playlist,
+        activeVideo: savedState ? savedState.playlist : videos.playlist[0],
+        nightMode: savedState ? savedState.nightMode : true,
+        playlistId: savedState? savedState.playlistId : videos.playlistId,
+        autoplay: savedState ? savedState.autoplay : false,
     });
+
+    useEffect(() => {
+        localStorage.setItem(`${state.playlistId}`, JSON.stringify({ ...state }));
+
+    }, [state]);
 
     useEffect(() => {
         const videoId = match.params.activeVideo;
@@ -70,8 +74,14 @@ const WbnPlayer = ({ match, history, location }) => {
         })
     };
 
-    const progressCallback = () => {
+    const progressCallback = (e) => {
+        if (e.playedSeconds > 10 && e.playedSeconds < 11) {
+            const videos = [...state.videos];
+            const playedVideo = videos.find(video => video.id === state.activeVideo.id);
+            playedVideo.played = true;
 
+            setState(prevState => ({ ...prevState, videos }));
+        }
     };
 
     return (
