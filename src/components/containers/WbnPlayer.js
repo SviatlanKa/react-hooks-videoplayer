@@ -31,10 +31,10 @@ const WbnPlayer = ({ match, history, location }) => {
 
     const [state, setState] = useState({
         videos: savedState ? savedState.videos : videos.playlist,
-        activeVideo: savedState ? savedState.playlist : videos.playlist[0],
+        activeVideo: savedState ? savedState.activeVideo : videos.playlist[0],
         nightMode: savedState ? savedState.nightMode : true,
         playlistId: savedState? savedState.playlistId : videos.playlistId,
-        autoplay: savedState ? savedState.autoplay : false,
+        autoplay: false,
     });
 
     useEffect(() => {
