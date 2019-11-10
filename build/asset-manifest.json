@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/react_videoplayer/static/js/main.23779d27.chunk.js",
+    "main.js.map": "/react_videoplayer/static/js/main.23779d27.chunk.js.map",
+    "runtime-main.js": "/react_videoplayer/static/js/runtime-main.8bc5cbb0.js",
+    "runtime-main.js.map": "/react_videoplayer/static/js/runtime-main.8bc5cbb0.js.map",
+    "static/js/2.d14b8272.chunk.js": "/react_videoplayer/static/js/2.d14b8272.chunk.js",
+    "static/js/2.d14b8272.chunk.js.map": "/react_videoplayer/static/js/2.d14b8272.chunk.js.map",
+    "index.html": "/react_videoplayer/index.html",
+    "precache-manifest.c7529e9ac3abfdf0b90fbb2198c12267.js": "/react_videoplayer/precache-manifest.c7529e9ac3abfdf0b90fbb2198c12267.js",
+    "service-worker.js": "/react_videoplayer/service-worker.js"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8bc5cbb0.js",
+    "static/js/2.d14b8272.chunk.js",
+    "static/js/main.23779d27.chunk.js"
+  ]
+}
